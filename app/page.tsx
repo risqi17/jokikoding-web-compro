@@ -5,19 +5,10 @@ import ProjectForm from "@/components/ProjectForm";
 import Footer from "@/components/Footer";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import TestimonialsSection from "@/components/TestimonialSection";
-import { useEffect } from "react";
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
 
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init({
-         duration: 800,
-         once: false,
-       })
- }, [])
 
   return (
     <main className="min-h-[100vh] relative dark">
