@@ -3,9 +3,6 @@ import { FC, FormEvent } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Textarea } from "@/components/ui/textarea"
 
-interface ProjectFormData {
-  details: string;
-}
 
 const ProjectForm: FC = () => {
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {

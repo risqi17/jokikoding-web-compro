@@ -1,5 +1,4 @@
 "use client";
-import { Metadata } from "next";
 import NavBar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ProjectForm from "@/components/ProjectForm";
