@@ -5,6 +5,7 @@ import ProjectForm from "@/components/ProjectForm";
 import Footer from "@/components/Footer";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import TestimonialsSection from "@/components/TestimonialSection";
+import Image from "next/image";
 
 
 
@@ -14,17 +15,16 @@ export default function Home() {
     <main className="min-h-[100vh] relative dark">
       <NavBar />
 
-      <div className="illustration-container h-full max-w-[99vw] absolute top-0 bottom-0 left-0 right-0 z-1 overflow-hidden">
+      <div className="illustration-container h-full max-w-[99vw] absolute top-0 bottom-0 left-0 right-0 z-[-1] overflow-hidden">
         <div className="h-full w-full max-w-[99vw] relative overflow-hidden">
-          <img data-aos="fade-right" data-aos-duration="1000" alt="Laptop illustration" src="/image/laptop-illustration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute -top-20 z-[1] -left-20 !opacity-50 md:opacity-50 aos-init aos-animate" loading="lazy" />
-          <img alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute -top-[200px] z-[1] -left-[200px] rotate-6" loading="lazy"/>
-          <img data-aos="fade-left" data-aos-duration="1000" alt="Laptop illustration" src="/image/data-illustration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-80 z-[1] -right-60 rotate-6 !opacity-50 md:opacity-50 aos-init aos-animate" loading="lazy" />
-          <img alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-80 z-[1] -right-[300px] rotate-6" loading="lazy" />
+          <Image data-aos="fade-right" data-aos-duration="1000" alt="Laptop illustration" src="/image/laptop-illustration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute -top-20 z-[1] -left-20 !opacity-50 md:opacity-50 aos-init aos-animate" loading="lazy" />
+          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute -top-[200px] z-[1] -left-[200px] rotate-6" loading="lazy"/>
+          <Image data-aos="fade-left" data-aos-duration="1000" alt="Laptop illustration" src="/image/data-illustration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-80 z-[1] -right-60 rotate-6 !opacity-50 md:opacity-50 aos-init aos-animate" loading="lazy" />
+          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-80 z-[1] -right-[300px] rotate-6" loading="lazy" />
 
-          {/* mesh */}
-          <img alt="Laptop illustration" src="/image/grid-decoration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1400px] z-[1] -right-[260px]" loading="lazy" />
-          <img alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1600px] z-[1] -right-[260px] rotate-6" loading="lazy" />
-          <img alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1200px] z-[1] -left-[260px] rotate-6" loading="lazy" />
+          <Image alt="Laptop illustration" src="/image/grid-decoration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1400px] z-[1] -right-[260px]" loading="lazy" />
+          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1600px] z-[1] -right-[260px] rotate-6" loading="lazy" />
+          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1200px] z-[1] -left-[260px] rotate-6" loading="lazy" />
         </div>
       </div>
 

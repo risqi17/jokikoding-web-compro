@@ -36,7 +36,7 @@ const NavBar: FC = () => {
             ))}
           </div>
         </div>
-        <Button className="bg-purple-600 hover:bg-purple-700">
+        <Button className="bg-green-600 hover:bg-purple-700 text-white">
           Pesan sekarang
         </Button>
       </nav>

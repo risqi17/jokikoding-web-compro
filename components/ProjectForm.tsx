@@ -12,7 +12,7 @@ const ProjectForm: FC = () => {
 
   return (
     <div className="w-full mx-auto px-6 pb-20">
-      <Card className="bg-gray-900/50 border-gray-800 z-40">
+      <Card className="bg-gray-900/50 border-gray-800 z-40 max-w-2xl mx-auto">
         <CardHeader>
           <CardTitle className="text-white text-2xl z-40">
             Hi Chief, mau joki apa nih?
