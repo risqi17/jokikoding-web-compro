@@ -58,13 +58,12 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <div className="w-8 h-8">
-                    <svg viewBox="0 0 32 32" className="w-full h-full">
-                        <rect width="14" height="14" x="2" y="2" fill="white" />
-                        <rect width="14" height="14" x="16" y="16" fill="white" />
+                <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
+                    <svg className="w-6 h-6 text-white" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 3l9 4v12l-9 4-9-4V7l9-4z" />
                     </svg>
-                    </div>
-                    <span className="font-semibold">Joki<span className="text-purple-500">Proyek</span></span>
+                </div>
+                    <span className="font-semibold">Joki<span className="text-green-500">Koding</span></span>
                 </div>
 
                 {/* Social Links */}

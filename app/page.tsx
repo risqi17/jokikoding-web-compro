@@ -37,14 +37,14 @@ export default function Home() {
       <div className="w-full flex items-center justify-center p-4 mt-36 mb-36">
         <div className="container w-full bg-gray-800/50 rounded-2xl p-12 backdrop-blur-sm">
           <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-            Gimana, sudah yakin?
+            Jangan kelamaan, keburu deadline bro
           </h2>
           <p className="text-gray-300 text-center text-lg mb-8">
-            Yuk pesan layanan kami sekarang juga dan jadikan kami sebagai mitra
+            Gas pesan layanan kami sekarang juga dan jadikan kami sebagai mitra
             terbaikmu dalam menghadirkan solusi IT yang hebat!
           </p>
           <div className="flex justify-center">
-            <button className="bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200">
+            <button className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200">
               Pesan Sekarang
             </button>
           </div>
