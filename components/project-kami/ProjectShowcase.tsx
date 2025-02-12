@@ -106,13 +106,13 @@ const ProjectShowcase = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
           {filteredProjects.map((project) => (
             <div key={project.id} className="bg-gray-800 rounded-xl p-6 relative overflow-hidden hover:shadow-lg hover:shadow-gray-500">
-              <div className="absolute right-0 top-0 bottom-0 w-1 bg-indigo-600"></div>
+              <div className="absolute right-0 top-0 bottom-0 w-1 bg-purple-600"></div>
               <div className="mb-4">
                 <div className="text-sm text-gray-400 mb-2">Deskripsi Proyek</div>
                 <h3 className="font-medium mb-4 line-clamp-3">{project.title}</h3>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.technologies.map((tag, tagIndex) => (
-                    <span key={tagIndex} className="px-3 py-1 rounded-full text-sm bg-gray-700/50 text-indigo-300 border border-indigo-500/20">
+                    <span key={tagIndex} className="px-3 py-1 rounded-full text-sm bg-gray-700/50 text-purple-300 border border-purple-500/20">
                       {tag}
                     </span>
                   ))}

@@ -1,0 +1,36 @@
+{
+  "testimonials": [
+    {
+      "id": "testimonial-1",
+      "projectType": "Aplikasi Sederhana",
+      "name": "Budi Santoso",
+      "role": "Pemilik Toko Online",
+      "image": "/testimonials/1.png",
+      "content": "Pengerjaan cepat dan sesuai dengan kebutuhan. Tim sangat responsif dalam memberikan solusi untuk setiap masalah yang muncul."
+    },
+    {
+      "id": "testimonial-2",
+      "projectType": "Website Company Profile",
+      "name": "Siti Rahma",
+      "role": "Marketing Manager",
+      "image": "/testimonials/2.png",
+      "content": "Desain yang modern dan fungsionalitas yang sempurna. Website kami menjadi lebih profesional dan menarik pelanggan baru."
+    },
+    {
+      "id": "testimonial-3",
+      "projectType": "Sistem Manajemen",
+      "name": "Ahmad Hidayat",
+      "role": "CEO Startup",
+      "image": "/testimonials/3.png",
+      "content": "Sistem yang dibangun sangat membantu efisiensi operasional perusahaan. Dokumentasi lengkap dan support yang responsif."
+    },
+    {
+      "id": "testimonial-4",
+      "projectType": "E-Commerce Platform",
+      "name": "Linda Wijaya",
+      "role": "Business Owner",
+      "image": "/testimonials/4.png",
+      "content": "Fitur-fitur e-commerce yang lengkap dan user-friendly. Sangat membantu dalam meningkatkan penjualan online kami."
+    }
+  ]
+}

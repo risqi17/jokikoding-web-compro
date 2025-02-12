@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "./ui/select";
 import { DatePicker } from "./DatePicker";
 import { Switch } from "./ui/switch";
+import { AlertNotification } from "./AlertNotification";
 
 interface FormData {
   phone: string;
@@ -16,8 +17,13 @@ interface FormData {
   details: string;
 }
 
-const ProjectForm: FC = () => {
+interface ProjectFormProps {
+  id?: string;
+}
+
+const ProjectForm: FC<ProjectFormProps> = ({ id }) => {
   const [isLoading, setIsLoading] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     phone: "",
     projectType: "",
@@ -59,7 +65,7 @@ const ProjectForm: FC = () => {
         details: "",
       });
 
-      alert('Project submitted successfully!');
+      setShowAlert(true);
     } catch (error) {
       console.error('Error submitting form:', error);
       alert('Failed to submit project. Please try again.');
@@ -69,7 +75,11 @@ const ProjectForm: FC = () => {
   };
 
   return (
-    <div className="w-full mx-auto px-6 pb-20">
+    <div id={id} className="w-full mx-auto px-6 pb-20">
+      <AlertNotification 
+        isOpen={showAlert} 
+        onClose={() => setShowAlert(false)} 
+      />
       <Card className="bg-gray-900/50 border-gray-800 z-40 max-w-2xl mx-auto">
         <CardHeader>
           <CardTitle className="text-white text-2xl z-40">

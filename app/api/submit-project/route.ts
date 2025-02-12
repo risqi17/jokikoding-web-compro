@@ -13,13 +13,16 @@ const auth = new google.auth.GoogleAuth({
 const sheets = google.sheets({ version: 'v4', auth });
 const SPREADSHEET_ID = process.env.GOOGLE_SHEET_ID;
 
+const TELEGRAM_BOT_URL = 'https://api.telegram.org/bot880546733:AAG-KYJwKe0Oce55Zh6VvAMsBJmgptfEyxA/sendMessage';
+const TELEGRAM_CHAT_ID = '-482660894';
+
 export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { phone, projectType, deadline, isFlexible, details } = body;
 
-    // Format current timestamp for submission date
-    // const submissionDate = new Date().toISOString().split('T')[0];
+    // Format current timestamp
+    const submissionDate = new Date().toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' });
 
     // Prepare the data row
     const values = [
@@ -35,12 +38,23 @@ export async function POST(req: Request) {
     // Append the data to the Google Sheet
     await sheets.spreadsheets.values.append({
       spreadsheetId: SPREADSHEET_ID,
-      range: 'Sheet1!A:F', // Adjust the range according to your sheet
+      range: 'Sheet1!A:F',
       valueInputOption: 'RAW',
       requestBody: {
         values,
       },
     });
+
+    // Send notification to Telegram
+    const message = `🎉 New Project Request!\n\n` +
+      `📱 Phone: ${phone}\n` +
+      `🏷️ Project Type: ${projectType}\n` +
+      `📅 Deadline: ${deadline || 'No deadline'}\n` +
+      `⚡ Flexible: ${isFlexible ? 'Yes' : 'No'}\n` +
+      `📝 Details: ${details}\n` +
+      `⏰ Submitted: ${submissionDate}`;
+
+    await fetch(`${TELEGRAM_BOT_URL}?chat_id=${TELEGRAM_CHAT_ID}&text=${encodeURIComponent(message)}`);
 
     return NextResponse.json({ success: true });
   } catch (error) {

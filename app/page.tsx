@@ -29,7 +29,7 @@ export default function Home() {
       </div>
 
       <HeroSection />
-      <ProjectForm />
+      <ProjectForm id="project-form" />
       <ProjectShowcase />
 
       <TestimonialsSection />
@@ -44,7 +44,13 @@ export default function Home() {
             terbaikmu dalam menghadirkan solusi IT yang hebat!
           </p>
           <div className="flex justify-center">
-            <button className="bg-green-600 hover:bg-green-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200">
+            <button 
+              onClick={() => {
+                const element = document.getElementById('project-form');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
+              className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200"
+            >
               Pesan Sekarang
             </button>
           </div>

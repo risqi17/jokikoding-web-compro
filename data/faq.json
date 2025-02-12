@@ -1,0 +1,34 @@
+{
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "Apa itu Joki Koding?",
+      "answer": "Joki Koding adalah layanan jasa pengerjaan proyek IT yang memberikan solusi lengkap untuk berbagai kebutuhan development, termasuk pembuatan website, aplikasi mobile, sistem informasi, machine learning, computer vision, chatbots, dan lainnya."
+    },
+    {
+      "id": "faq-2",
+      "question": "Bagaimana cara memulai proyek dengan Joki Koding?",
+      "answer": "Sangat mudah! Cukup isi form di halaman utama dengan detail proyek Anda, atau klik tombol 'Pesan Sekarang'. Tim kami akan menghubungi Anda untuk diskusi lebih lanjut tentang kebutuhan dan solusi yang tepat."
+    },
+    {
+      "id": "faq-3",
+      "question": "Apakah layanan ini cocok untuk semua jenis bisnis?",
+      "answer": "Ya! Kami melayani berbagai skala bisnis dari UMKM hingga enterprise. Solusi kami dapat disesuaikan dengan kebutuhan dan budget Anda, dengan tetap mempertahankan kualitas terbaik."
+    },
+    {
+      "id": "faq-4",
+      "question": "Berapa lama waktu pengerjaan proyek?",
+      "answer": "Waktu pengerjaan bervariasi tergantung kompleksitas proyek. Kami akan memberikan estimasi waktu yang akurat setelah berdiskusi tentang detail proyek Anda. Kami selalu berusaha menyelesaikan proyek tepat waktu."
+    },
+    {
+      "id": "faq-5",
+      "question": "Apakah ada garansi untuk proyek yang dikerjakan?",
+      "answer": "Ya, kami memberikan garansi maintenance selama 1 bulan setelah proyek selesai. Selama periode ini, kami akan membantu memperbaiki bug atau masalah yang mungkin muncul."
+    },
+    {
+      "id": "faq-6",
+      "question": "Bagaimana dengan keamanan data proyek?",
+      "answer": "Keamanan adalah prioritas kami. Kami menerapkan standar keamanan tinggi dan menandatangani NDA (Non-Disclosure Agreement) untuk menjaga kerahasiaan data dan informasi proyek Anda."
+    }
+  ]
+}

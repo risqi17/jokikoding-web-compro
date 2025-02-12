@@ -1,0 +1,54 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "title": "E-Commerce Website",
+      "description": "Sebuah website e-commerce modern dengan fitur keranjang belanja, pembayaran, dan manajemen produk.",
+      "image": "/project/1.png",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+      "category": "Web Development",
+      "client": "Toko Online Indonesia",
+      "year": "2024"
+    },
+    {
+      "id": "2",
+      "title": "Sistem Manajemen Sekolah",
+      "description": "Aplikasi manajemen sekolah lengkap dengan fitur absensi, nilai, dan komunikasi orang tua.",
+      "image": "/project/2.png",
+      "technologies": ["React", "Node.js", "MongoDB", "Express"],
+      "category": "Web Application",
+      "client": "SMA Negeri 1",
+      "year": "2023"
+    },
+    {
+      "id": "3",
+      "title": "Aplikasi Inventory",
+      "description": "Sistem inventory dan manajemen stok dengan fitur tracking realtime dan laporan analitik.",
+      "image": "/project/3.png",
+      "technologies": ["Vue.js", "Laravel", "MySQL", "Docker"],
+      "category": "Enterprise Software",
+      "client": "PT Maju Bersama",
+      "year": "2023"
+    },
+    {
+      "id": "4",
+      "title": "Mobile App Kesehatan",
+      "description": "Aplikasi mobile untuk tracking kesehatan dan konsultasi dokter online.",
+      "image": "/project/4.png",
+      "technologies": ["React Native", "Firebase", "Node.js"],
+      "category": "Mobile App",
+      "client": "Klinik Sehat",
+      "year": "2024"
+    },
+    {
+      "id": "5",
+      "title": "Dashboard Analytics",
+      "description": "Dashboard analitik bisnis dengan visualisasi data interaktif dan laporan real-time.",
+      "image": "/project/1.png",
+      "technologies": ["Next.js", "D3.js", "PostgreSQL", "Redis"],
+      "category": "Business Intelligence",
+      "client": "PT Data Insight",
+      "year": "2024"
+    }
+  ]
+}

@@ -11,7 +11,7 @@ const Footer = () => {
     <div className="w-full flex items-center justify-center p-4 mt-36 mb-36">
         <div className="container mx-auto text-white p-8 z-10">
             
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                     <h2 className="text-4xl font-bold mb-4">
                     Masih bingung? Tenang, kami siap membantumu
@@ -58,12 +58,12 @@ const Footer = () => {
                 <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
+                <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center">
                     <svg className="w-6 h-6 text-white" viewBox="0 0 24 24">
                     <path fill="currentColor" d="M12 3l9 4v12l-9 4-9-4V7l9-4z" />
                     </svg>
                 </div>
-                    <span className="font-semibold">Joki<span className="text-green-500">Koding</span></span>
+                    <span className="font-semibold">Joki<span className="text-indigo-500">Koding</span></span>
                 </div>
 
                 {/* Social Links */}
