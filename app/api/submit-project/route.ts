@@ -13,8 +13,8 @@ const auth = new google.auth.GoogleAuth({
 const sheets = google.sheets({ version: 'v4', auth });
 const SPREADSHEET_ID = process.env.GOOGLE_SHEET_ID;
 
-const TELEGRAM_BOT_URL = 'https://api.telegram.org/bot880546733:AAG-KYJwKe0Oce55Zh6VvAMsBJmgptfEyxA/sendMessage';
-const TELEGRAM_CHAT_ID = '-482660894';
+const TELEGRAM_BOT_URL = process.env.TELEGRAM_BOT_URL;
+const TELEGRAM_CHAT_ID = process.env.TELEGRAM_CHAT_ID;
 
 export async function POST(req: Request) {
   try {
