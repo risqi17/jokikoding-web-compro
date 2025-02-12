@@ -68,8 +68,8 @@ const Footer = () => {
 
                 {/* Social Links */}
                 <div className="flex items-center gap-6">
-                    <a href="https://instagram.com/jokiproyek" className="text-gray-400 hover:text-white transition-colors">
-                    @jokiproyek
+                    <a href="https://instagram.com/jokikoding_" className="text-gray-400 hover:text-white transition-colors">
+                    @jokikoding
                     </a>
                     <a href="#" className="text-gray-400 hover:text-white transition-colors">
                     Layanan Pengaduan & Saran
@@ -77,9 +77,8 @@ const Footer = () => {
                 </div>
                 </div>
 
-                {/* Copyright */}
                 <div className="text-center text-gray-500 text-sm mt-12 pb-8">
-                © JokiProyek 2023. All rights reserved.
+                © JokiKoding 2025. All rights reserved.
                 </div>
             </footer>
         </div>
