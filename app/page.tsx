@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import TestimonialsSection from "@/components/TestimonialSection";
 import Image from "next/image";
+import ScrollAnimation from "@/components/ScrollAnimation";
 
 
 
@@ -28,34 +29,46 @@ export default function Home() {
         </div>
       </div>
 
-      <HeroSection />
-      <ProjectForm id="project-form" />
-      <ProjectShowcase />
+      <ScrollAnimation>
+        <HeroSection />
+      </ScrollAnimation>
 
-      <TestimonialsSection />
+      <ScrollAnimation>
+        <ProjectForm id="project-form" />
+      </ScrollAnimation>
 
-      <div className="w-full flex items-center justify-center p-4 mt-36 mb-36">
-        <div className="container w-full bg-gray-800/50 rounded-2xl p-12 backdrop-blur-sm">
-          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
-            Jangan kelamaan, keburu deadline bro
-          </h2>
-          <p className="text-gray-300 text-center text-lg mb-8">
-            Gas pesan layanan kami sekarang juga dan jadikan kami sebagai mitra
-            terbaikmu dalam menghadirkan solusi IT yang hebat!
-          </p>
-          <div className="flex justify-center">
-            <button 
-              onClick={() => {
-                const element = document.getElementById('project-form');
-                element?.scrollIntoView({ behavior: 'smooth' });
-              }}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200"
-            >
-              Pesan Sekarang
-            </button>
+      <ScrollAnimation>
+        <ProjectShowcase />
+      </ScrollAnimation>
+
+      <ScrollAnimation>
+        <TestimonialsSection />
+      </ScrollAnimation>
+
+      <ScrollAnimation>
+        <div className="w-full flex items-center justify-center p-4 mt-36 mb-36">
+          <div className="container w-full bg-gray-800/50 rounded-2xl p-12 backdrop-blur-sm">
+            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
+              Jangan kelamaan, keburu deadline bro
+            </h2>
+            <p className="text-gray-300 text-center text-lg mb-8">
+              Gas pesan layanan kami sekarang juga dan jadikan kami sebagai mitra
+              terbaikmu dalam menghadirkan solusi IT yang hebat!
+            </p>
+            <div className="flex justify-center">
+              <button 
+                onClick={() => {
+                  const element = document.getElementById('project-form');
+                  element?.scrollIntoView({ behavior: 'smooth' });
+                }}
+                className="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-8 rounded-lg transition-colors duration-200"
+              >
+                Pesan Sekarang
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+      </ScrollAnimation>
 
       <Footer />
     </main>
