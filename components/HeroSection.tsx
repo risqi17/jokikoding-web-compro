@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { FC } from 'react'
 
 const HeroSection: FC = () => {
@@ -10,7 +11,7 @@ const HeroSection: FC = () => {
         <span data-aos="fade-up" className="text-5xl text-white aos-init aos-animate">
           Mulai dari &nbsp;
           <strong className="relative inline-block">99K &nbsp;
-            <img alt="underline" src="/image/underline.svg" width="108" height="9" decoding="async" data-nimg="1" className="absolute -bottom-3" loading="lazy" /> 
+            <Image alt="underline" src="/image/underline.svg" width="108" height="9" decoding="async" data-nimg="1" className="absolute -bottom-3" loading="lazy" /> 
             </strong> 
             Aja!
         </span>

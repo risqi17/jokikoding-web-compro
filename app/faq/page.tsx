@@ -34,24 +34,24 @@ export default function FAQPage() {
 
           {/* FAQ Section */}
           <div className="grid gap-4">
-            <Accordion type="single" collapsible className="w-full space-y-4">
-              {faqs.map((faq) => (
-                <ScrollAnimation>
-                  <AccordionItem
-                    key={faq.id}
-                    value={faq.id}
-                    className="bg-gray-900/50 border border-gray-800 rounded-lg px-6 "
-                  >
-                    <AccordionTrigger className="text-white hover:text-primary">
-                      {faq.question}
-                    </AccordionTrigger>
-                    <AccordionContent className="text-gray-400">
-                      {faq.answer}
-                    </AccordionContent>
-                  </AccordionItem>
-                </ScrollAnimation>
-              ))}
-            </Accordion>
+            <ScrollAnimation>
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                {faqs.map((faq) => (
+                    <AccordionItem
+                      key={faq.id}
+                      value={faq.id}
+                      className="bg-gray-900/50 border border-gray-800 rounded-lg px-6 "
+                    >
+                      <AccordionTrigger className="text-white hover:text-primary">
+                        {faq.question}
+                      </AccordionTrigger>
+                      <AccordionContent className="text-gray-400">
+                        {faq.answer}
+                      </AccordionContent>
+                    </AccordionItem>
+                ))}
+              </Accordion>
+            </ScrollAnimation>
           </div>
 
           {/* Contact Section */}
