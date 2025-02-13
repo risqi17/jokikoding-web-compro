@@ -18,15 +18,15 @@ export default function Home() {
 
       <div className="illustration-container h-full max-w-[99vw] absolute top-0 bottom-0 left-0 right-0 z-[0] overflow-hidden">
         <div className="h-full w-full max-w-[99vw] relative overflow-hidden">
-          <Image alt="Grid background" src="/image/wide-grid.svg" width={1920} height={1080} decoding="async" data-nimg="1" className=" top-0 z-1 left-0 w-full h-screen object-cover opacity-30" loading="lazy"/>
-          <Image data-aos="fade-right" data-aos-duration="1000" alt="Laptop illustration" src="/image/laptop-illustration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-10 z-[2] -left-20 !opacity-50 md:opacity-50 aos-init aos-animate" loading="lazy" />
-          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[30px] z-[2] -left-[200px] rotate-6" loading="lazy"/>
-          <Image data-aos="fade-left" data-aos-duration="1000" alt="Laptop illustration" src="/image/data-illustration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-80 z-[2] -right-[100px] rotate-6 !opacity-50 md:opacity-50 aos-init aos-animate" loading="lazy" />
-          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-80 z-[2] -right-[300px] rotate-6" loading="lazy" />
+          <Image alt="Grid background" src="/image/wide-grid.svg" width={1920} height={1080} decoding="async" data-nimg="1" className=" top-0 z-0 left-0 w-full h-screen object-cover opacity-30" priority/>
+          <Image data-aos="fade-right" data-aos-duration="1000" alt="Laptop illustration" src="/image/laptop-illustration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-10 z-20 -left-20 opacity-50 md:opacity-50 aos-init aos-animate" />
+          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[30px] z-10 -left-[200px] rotate-6"/>
+          <Image data-aos="fade-left" data-aos-duration="1000" alt="Laptop illustration" src="/image/data-illustration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-80 z-[2] -right-[100px] rotate-6 !opacity-50 md:opacity-50 aos-init aos-animate" />
+          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-80 z-[2] -right-[300px] rotate-6" />
 
-          <Image alt="Laptop illustration" src="/image/grid-decoration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1400px] z-[2] -right-[260px]" loading="lazy" />
-          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1600px] z-[2] -right-[260px] rotate-6" loading="lazy" />
-          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1200px] z-[2] -left-[260px] rotate-6" loading="lazy" />
+          <Image alt="Laptop illustration" src="/image/grid-decoration.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1400px] z-[2] -right-[260px]" />
+          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1600px] z-[2] -right-[260px] rotate-6" />
+          <Image alt="Laptop illustration" src="/image/purple-blur.svg" width="500" height="500" decoding="async" data-nimg="1" className="absolute top-[1200px] z-[2] -left-[260px] rotate-6" />
         </div>
       </div>
 

@@ -14,10 +14,10 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                     <h2 className="text-4xl font-bold mb-4">
-                    Masih bingung? Tenang, kami siap membantumu
+                        Kamu bingung? konsultasikan langsung kepada kami
                     </h2>
                     <p className="text-gray-400">
-                    Jika ada pertanyaan lain yang belum ada di sini boleh tanyakan dan konsultasikan langsung di sini
+                        Apabila ada pertanyaan jangan ragu untuk menghubungi kami.
                     </p>
                 </div>
                 <div>
