@@ -75,7 +75,9 @@ export default function ProjectKami() {
                     {project.title}
                   </h3>
                   <p className="text-gray-400 mb-4">{project.description}</p>
-                  <div className="flex flex-wrap gap-2 mb-4">
+                  {project.link && <a href={project.link} className="text-primary hover:underline hover:text-indigo-400 mb-4" target="_blank">Project Link</a>}
+                  {/* <a href="" className="text-primary hover:underline hover:text-indigo-400 mb-4">Project Link</a> */}
+                  <div className="flex flex-wrap gap-2 mb-4 mt-4">
                     {project.technologies.map((tech) => (
                       <span
                         key={tech}

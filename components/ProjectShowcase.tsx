@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 interface Project {
@@ -19,7 +20,7 @@ const ProjectShowcase = () => {
     { id: 'all', name: 'Aplikasi Sederhana', icon: '✏️' },
     { id: 'website', name: 'Website', icon: '🌐' },
     { id: 'mobile', name: 'Mobile', icon: '📱' },
-    { id: 'data-science', name: 'Data Science', icon: '📊' },
+    // { id: 'data-science', name: 'Data Science', icon: '📊' },
   ];
 
   
@@ -27,41 +28,41 @@ const ProjectShowcase = () => {
     {
       id: 1,
       category: 'aplikasi',
-      title: 'Penambahan fitur pada program sederhana untuk mengelola data kelapa sawit',
+      title: 'Penambahan fitur pada program aplikasi Laravel, Codeigniter, atau PHP',
       description: 'Deskripsi Proyek',
       price: 99000,
       originalPrice: 180000,
-      technologies: ['Java', 'IDE Netbeans', 'iReport Plugin'],
+      technologies: ['PHP', 'Codeigniter', 'Laravel'],  
       status: 'Proyek siap kirim'
     },
     {
       id: 2,
       category: 'website',
-      title: 'Program sederhana untuk menghitung luas suatu bentuk bangun datar',
+      title: 'Aplikasi chatbot sederhana menggunakan python, laravel, atau NodeJS',
       description: 'Deskripsi Proyek',
       price: 99000,
       originalPrice: 295000,
-      technologies: ['Java', 'Android Studio'],
+      technologies: ['Laravel', 'Python', 'NodeJS'],
       status: 'Proyek siap kirim'
     },
     {
       id: 3,
-      category: 'mobile',
-      title: 'Program sederhana mobile application',
+      category: 'website',
+      title: 'Aplikasi Kasir menggunakan Laravel, atau NodeJS',
       description: 'Deskripsi Proyek',
-      price: 99000,
-      originalPrice: 295000,
-      technologies: ['Java', 'Android Studio'],
+      price: 990000,
+      originalPrice: 1450000,
+      technologies: ['Laravel', 'NodeJS'],
       status: 'Proyek siap kirim'
     },
     {
       id: 4,
-      category: 'data-science',
-      title: 'Program data science',
+      category: 'mobile',
+      title: 'Aplikasi mobile untuk tracking kesehatan dan konsultasi dokter online.',
       description: 'Deskripsi Proyek',
-      price: 99000,
-      originalPrice: 295000,
-      technologies: ['Java', 'Android Studio'],
+      price: 3450000,
+      originalPrice: 2950000,
+      technologies: ['Flutter', 'Laravel'],
       status: 'Proyek siap kirim'
     },
     // Add more projects as needed
@@ -120,7 +121,7 @@ const ProjectShowcase = () => {
               </div>
               <div className="flex items-center justify-between mt-auto">
                 <div className="flex items-center gap-2 text-gray-400">
-                  <span className="text-sm">Proyek siap kirim</span>
+                  <span className="text-sm"></span>
                 </div>
                 <div className="text-right">
                   <div className="text-sm text-gray-500 line-through">
@@ -137,9 +138,9 @@ const ProjectShowcase = () => {
 
         {/* See More Link */}
         <div className="text-right">
-          <a href="#" className="text-gray-400 hover:text-white transition-colors">
-            Lihat Lebih Banyak →
-          </a>
+          <Link href={'/project-kami'} className="text-gray-400 hover:text-white transition-colors">
+            Lebih Banyak →
+          </Link>
         </div>
       </div>
     </div>

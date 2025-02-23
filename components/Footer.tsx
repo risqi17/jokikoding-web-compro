@@ -27,7 +27,7 @@ const Footer = () => {
                         Berapa lama proyek dikerjakan?
                         </AccordionTrigger>
                         <AccordionContent className="text-gray-400">
-                        [Content goes here]
+                        Untuk proyek kecil, kami dapat menyelesaikan proyek dalam waktu 1-2 hari. Untuk proyek besar, kami dapat menyelesaikan proyek dalam waktu 2-4 minggu bergantung dengan tingkat kompleksitas proyek.
                         </AccordionContent>
                     </AccordionItem>
 
@@ -36,7 +36,7 @@ const Footer = () => {
                         Apakah bisa di-refund?
                         </AccordionTrigger>
                         <AccordionContent className="text-gray-400">
-                        [Content goes here]
+                        Jika proyek belum selesai, kami akan memberikan refund sebesar 50% dari total biaya proyek.
                         </AccordionContent>
                     </AccordionItem>
 

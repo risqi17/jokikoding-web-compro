@@ -5,7 +5,7 @@
       "projectType": "Aplikasi Sederhana",
       "name": "Budi Santoso",
       "role": "Pemilik Toko Online",
-      "image": "/testimonials/1.png",
+      "image": "/testimonials/boy.jpg",
       "content": "Pengerjaan cepat dan sesuai dengan kebutuhan. Tim sangat responsif dalam memberikan solusi untuk setiap masalah yang muncul."
     },
     {
@@ -13,7 +13,7 @@
       "projectType": "Website Company Profile",
       "name": "Siti Rahma",
       "role": "Marketing Manager",
-      "image": "/testimonials/2.png",
+      "image": "/testimonials/girl.jpg",
       "content": "Desain yang modern dan fungsionalitas yang sempurna. Website kami menjadi lebih profesional dan menarik pelanggan baru."
     },
     {
@@ -21,7 +21,7 @@
       "projectType": "Sistem Manajemen",
       "name": "Ahmad Hidayat",
       "role": "CEO Startup",
-      "image": "/testimonials/3.png",
+      "image": "/testimonials/boy.jpg",
       "content": "Sistem yang dibangun sangat membantu efisiensi operasional perusahaan. Dokumentasi lengkap dan support yang responsif."
     },
     {
@@ -29,8 +29,16 @@
       "projectType": "E-Commerce Platform",
       "name": "Linda Wijaya",
       "role": "Business Owner",
-      "image": "/testimonials/4.png",
+      "image": "/testimonials/girl.jpg",
       "content": "Fitur-fitur e-commerce yang lengkap dan user-friendly. Sangat membantu dalam meningkatkan penjualan online kami."
+    },
+    {
+      "id": "testimonial-5",
+      "projectType": "Point Of Sale",
+      "name": "Linda Wijaya",
+      "role": "Business Owner",
+      "image": "/testimonials/girl.jpg",
+      "content": "Respon cepat dan profesional. Tim kami sangat memahami kebutuhan bisnis kami."
     }
   ]
 }
