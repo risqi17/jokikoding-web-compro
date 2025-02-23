@@ -16,7 +16,7 @@ const HeroSection: FC = () => {
             Aja!
         </span>
         <p className="text-gray-300 mt-10 max-w-2xl mx-auto">
-        "Hasil optimal" juga berarti bahwa solusi yang dihasilkan mampu membantu klien mencapai tujuan mereka, baik itu meningkatkan efisiensi operasional, mengembangkan produk inovatif, atau memecahkan masalah teknis yang kompleks.
+        &quot;Hasil optimal&quot; juga berarti bahwa solusi yang dihasilkan mampu membantu klien mencapai tujuan mereka, baik itu meningkatkan efisiensi operasional, mengembangkan produk inovatif, atau memecahkan masalah teknis yang kompleks.
         </p>
       </div>
     </section>
