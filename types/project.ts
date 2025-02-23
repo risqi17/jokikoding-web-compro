@@ -7,6 +7,7 @@ export interface Project {
   category: string;
   client: string;
   year: string;
+  link: string;
 }
 
 export interface ProjectsData {
