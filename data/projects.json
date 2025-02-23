@@ -182,7 +182,7 @@
       "description": "Aplikasi AI Caption Generator using OpenAI API.",
       "image": "/project/Frame 225.png",
       "technologies": ["OpenAI", "Laravel", "Javascript"],
-      "category": "Web Application",
+      "category": "AI Application",
       "client": "",
       "year": "2025",
       "link": "https://gen-ai.risqiproject.xyz/"
