@@ -64,9 +64,9 @@ export default function FAQPage() {
                 Kami siap membantu menjawab pertanyaan Anda. Hubungi tim support kami untuk
                 mendapatkan jawaban yang lebih detail.
               </p>
-              <button className="mt-4 px-6 py-3 bg-primary text-black font-medium rounded-lg hover:bg-primary/90 transition-colors">
-                Hubungi Support Team
-              </button>
+              <a href="https://forms.gle/qDWaMy6c8BdkcDpf8" target="_blank" >
+                <button className="mt-10 px-6 py-3 bg-primary text-black font-medium rounded-lg hover:bg-primary/90 transition-colors">Hubungi Support Team</button>
+              </a>
             </div>
           </ScrollAnimation>
         </div>

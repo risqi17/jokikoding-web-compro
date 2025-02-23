@@ -68,11 +68,11 @@ const Footer = () => {
 
                 {/* Social Links */}
                 <div className="flex items-center gap-6">
-                    <a href="https://instagram.com/jokikoding_" className="text-gray-400 hover:text-white transition-colors">
+                    <a href="https://instagram.com/jokikoding_" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                     @jokikoding
                     </a>
-                    <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                    Layanan Pengaduan & Saran
+                    <a href="https://forms.gle/qDWaMy6c8BdkcDpf8" target="_blank" className="text-gray-400 hover:text-white transition-colors">
+                    ☎️Layanan Pengaduan & Saran
                     </a>
                 </div>
                 </div>
