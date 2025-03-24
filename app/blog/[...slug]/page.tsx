@@ -15,16 +15,12 @@ interface PostPageProps {
     params: {
         slug: string[];
     };
+    searchParams?: { [key: string]: string | string[] | undefined };
 }
 
 async function getPostFromParams(params: PostPageProps["params"]) {
-    // console.log(await params.slug);
     const gett = await params;
-    // const slug = params?.slug.join("/");
     const slug = gett.slug.join("/");
-
-    console.log(slug);
-    
 
     const post = posts.find((post) => post.slugAsParams === slug);
 
