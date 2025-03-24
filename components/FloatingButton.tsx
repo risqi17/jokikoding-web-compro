@@ -15,7 +15,8 @@ import { usePathname } from 'next/navigation';
 const navItems = [
   { href: '/', label: 'Home' },
   { href: '/project-kami', label: 'Project Kami' },
-  { href: '/marketplace', label: 'Project Marketplace' },
+  // { href: '/marketplace', label: 'Project Marketplace' },
+  { href: '/blog', label: 'Blog' },
   { href: '/faq', label: 'FAQ' },
 ];
 
