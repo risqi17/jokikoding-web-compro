@@ -15,8 +15,6 @@ export function Thumbnail({
     slug,
     title,
     cover,
-    description,
-    date,
     tags,
   }: PostItemProps){
     return (
