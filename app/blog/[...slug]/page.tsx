@@ -18,8 +18,19 @@ interface PostPageProps {
 }
 
 async function getPostFromParams(params: PostPageProps["params"]) {
-    const slug = params?.slug?.join("/");
+    // console.log(await params.slug);
+    const gett = await params;
+    // const slug = params?.slug.join("/");
+    const slug = gett.slug.join("/");
+
+    console.log(slug);
+    
+
     const post = posts.find((post) => post.slugAsParams === slug);
+
+    if (!post) {
+        return null;
+    }
 
     return post;
 }
@@ -69,8 +80,7 @@ export async function generateStaticParams(): Promise<
     return posts.map((post) => ({ slug: post.slugAsParams.split("/") }));
 }
 
-export default async function Home({ params }: PostPageProps) {
-
+export default async function PostPage({ params }: PostPageProps) {
     const post = await getPostFromParams(params);
     const latestPosts = sortPosts(posts).slice(0, 5);
 
@@ -79,9 +89,9 @@ export default async function Home({ params }: PostPageProps) {
     }
 
     return (
-        <main className="min-h-screen relative dark">
+        <main className="min-h-screen relative dark relative overflow-y-auto overflow-x-hidden">
             <NavBar/>
-            <div className="mx-auto relative h-screen overflow-y-auto overflow-x-hidden flex max-w-screen-2xl flex-col justify-between gap-4 p-4 lg:gap-6 lg:p-6">
+            <div className="mx-auto flex max-w-screen-2xl flex-col justify-between gap-4 p-4 lg:gap-6 lg:p-6">
                 <main className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6 z-10">
                     <div className="rounded-2xl bg-white p-6 shadow dark:bg-black dark:shadow-dark lg:col-span-2 lg:p-10">
                         <figure className="aspect-video overflow-hidden rounded-lg">
@@ -92,9 +102,6 @@ export default async function Home({ params }: PostPageProps) {
                             <li className="relative text-sm before:mr-1 before:content-['\2022'] dark:text-light">
                             <Date dateString={post.date} />
                             </li>
-                            {/* <li className="relative text-sm text-muted/50 before:mr-1 before:content-['\2022'] dark:text-muted">
-                                1.5k Views
-                            </li> */}
                         </ul>
 
                         <article className="prose mt-2 dark:prose-invert xl:prose-lg prose-headings:font-medium prose-blockquote:border-primary lg:mt-2">
