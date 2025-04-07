@@ -30,23 +30,14 @@ export default function Home() {
         </div>
       </div>
 
-      <ScrollAnimation>
         <HeroSection />
-      </ScrollAnimation>
 
-      <ScrollAnimation>
         <ProjectForm id="project-form" />
-      </ScrollAnimation>
 
-      <ScrollAnimation>
         <ProjectShowcase />
-      </ScrollAnimation>
 
-      <ScrollAnimation>
         <TestimonialsSection />
-      </ScrollAnimation>
 
-      <ScrollAnimation>
         <div className="w-full flex items-center justify-center p-4 mt-36 mb-36">
           <div className="container w-full bg-gray-800/50 rounded-2xl p-12 backdrop-blur-sm">
             <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
@@ -69,7 +60,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </ScrollAnimation>
 
       <Footer />
     </main>
