@@ -6,9 +6,6 @@ import Footer from "@/components/Footer";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import TestimonialsSection from "@/components/TestimonialSection";
 import Image from "next/image";
-import ScrollAnimation from "@/components/ScrollAnimation";
-
-
 
 export default function Home() {
 
